@@ -7,12 +7,6 @@ export default defineConfig({
     outDir: 'dist',
     assetsDir: 'assets',
     emptyOutDir: true,
-    commonjsOptions: {
-      include: [/tsparticles/, /node_modules/]
-    }
-  },
-  optimizeDeps: {
-    include: ['react-tsparticles', 'tsparticles']
   },
   base: './',
 });
