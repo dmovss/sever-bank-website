@@ -5,8 +5,8 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: 'dist',
+    assetsDir: 'assets',  // Explicit assets directory
+    emptyOutDir: true,    // Clear output directory before build
   },
-  server: {
-    port: 3000,
-  },
+  base: './',  // Relative base path
 });
